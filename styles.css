@@ -1,0 +1,80 @@
+  html { 
+    overflow-y: hidden; 
+}
+
+  body{
+    background: linear-gradient(
+      90deg,
+      #6c55ff,
+      #ffb555);
+}
+
+  #ball {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 10% 30% auto;
+    position: relative;
+    border-radius: 50%;  
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  #wall1{
+    position: fixed;
+    background: linear-gradient(180deg, #ffb555, transparent);
+	width: 100px;
+	height: 700px;
+	margin: 1% 25% auto;
+  
+  }
+  
+  
+  #wall2{
+    position: fixed;
+    background: linear-gradient(180deg, #6c55ff, transparent);
+	width: 100px;
+	height: 700px;
+	margin: 1% 62.8% auto;
+  
+  }
+
+  @keyframes bounce{
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #ffb555;
+    }
+    25% {
+      top: 249px;
+      left: 249px;
+      width: 120px;
+      height: 80px;
+      background: #b585aa;
+    }
+    50% {
+      top: 0px;
+      left: 498px;
+      width: 100px;
+      height: 100px;
+      background: #6c55ff;
+      
+    }
+    75% {
+      top: 249px;
+      left: 249px;
+      width: 120px;
+      height: 80px;
+      background: #b585aa;
+            
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 100px;
+      height: 100px;
+      background: #ffb555;
+      
+    }
+  }
