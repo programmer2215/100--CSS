@@ -21,24 +21,7 @@
     animation-iteration-count: infinite;
   }
 
-  #wall1{
-    position: fixed;
-    background: linear-gradient(180deg, #ffb555, transparent);
-	width: 100px;
-	height: 700px;
-	margin: 1% 25% auto;
-  
-  }
-  
-  
-  #wall2{
-    position: fixed;
-    background: linear-gradient(180deg, #6c55ff, transparent);
-	width: 100px;
-	height: 700px;
-	margin: 1% 62.8% auto;
-  
-  }
+
 
   @keyframes bounce{
     0% {
